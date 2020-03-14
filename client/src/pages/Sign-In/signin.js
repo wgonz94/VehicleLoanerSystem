@@ -2,7 +2,7 @@ import React from 'react';
 import './style.css'
 
 
-function Signin (){
+function Signin (){   
 
 return (
 <div className='signUpform'>
