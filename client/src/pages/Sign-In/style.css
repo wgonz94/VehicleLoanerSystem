@@ -1,0 +1,23 @@
+div.signUpform{
+    width: 500px;
+    height: 400px;
+    background-color: cornsilk;
+    position: relative;
+    left: 32%;
+    top: 100px;
+}
+
+h1{
+    text-align: center;
+    padding-top: 75px;
+}
+
+button{
+    position: relative;
+    left: 42%;
+    top: 20px;
+}
+
+input{
+    margin-top: 25px;
+}
