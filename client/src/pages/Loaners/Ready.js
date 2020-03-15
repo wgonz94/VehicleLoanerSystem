@@ -1,11 +1,13 @@
 import React from 'react';
+import { Col, Row } from '../../components/Grid';
 
 function Ready() {
 
 return(
-<div>
-    
-</div>
+<Row>
+    <Col>
+    </Col>
+</Row>
 )
 }
 

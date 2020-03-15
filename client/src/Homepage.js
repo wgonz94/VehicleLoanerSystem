@@ -5,6 +5,7 @@ import Ready from './pages/Loaners/Ready';
 import OffLot from './pages/Loaners/Off-Lot';
 import Unavailable from './pages/Loaners/Unavailable';
 import Signin from './pages/Sign-In/signin';
+import { Container } from './components/Grid';
 
 
 function Homepage() {
@@ -31,13 +32,13 @@ renderPage = (e) => {
 
 
  return(
-     <div>
+     <Container fluid>
          <Header/>
          <Nav
             currentPage={this.state.currentPage}
             handlePageChange={this.handlePageChange}/>
         {this.renderPage()}
-     </div>
+     </Container>
  )
 }
 
