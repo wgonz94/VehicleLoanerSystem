@@ -3,10 +3,11 @@ div.logo{
     /* margin-top: 5px; */
 }
 div.main-header{
-    background-color: whitesmoke;
+    background-color: white;
     width: 105%;
     padding-top: 25px;
     position: relative;
     right: 15px;
     border-radius: 12px;
+    border-bottom: thick black;
 }

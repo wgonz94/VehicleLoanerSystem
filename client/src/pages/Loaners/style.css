@@ -4,7 +4,8 @@ div.bgCars{
     padding: 5px;
     margin: 5px;
     border-radius: 12px;
-    width: 75%;
+    height: 250px;
+    width: 55%;
     position: relative;
     left: 25%;
     top: 20px;
@@ -16,7 +17,7 @@ img{
     border-radius: 10px;
     position: relative;
     left: 35px;
-    bottom: 20px;
+    bottom: 5px;
 }
 
 h3{

@@ -1,5 +1,4 @@
 div.container-fluid{
-    background-image: url('https://img.freepik.com/free-vector/worldwide-connection-blue-background-illustration-vector_53876-61764.jpg?size=626&ext=jpg');
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-image: radial-gradient( teal, white);
+
 }
