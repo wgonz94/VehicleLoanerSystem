@@ -1,6 +1,6 @@
 import React, {useState, createContext} from 'react'
 
-const CarContext = createContext();
+export const CarContext = createContext();
 
 export const CarProvider = (props) => {
     const [cars, setCars] = useState([
@@ -198,7 +198,7 @@ export const CarProvider = (props) => {
     ]);
 
     return(
-    <CarContext.Provider>{props.children}</CarContext.Provider>
+    <CarContext.Provider value={[cars, setCars]}>{props.children}</CarContext.Provider>
     );
 }
 
