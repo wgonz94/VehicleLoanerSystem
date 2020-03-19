@@ -1,12 +1,13 @@
 import React from 'react';
+import Homepage from './pages/Homepage';
 // import Signin from './pages/Sign-In/signin';
-import Homepage from './Homepage';
+
 
 
 function App() {
   return (
     <div className="App">
-      <Homepage/>
+      <Homepage />
     </div>
   );
 }

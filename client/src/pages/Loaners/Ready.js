@@ -1,13 +1,209 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Row } from '../../components/Grid';
+import './style.css'
+import Car from './Car';
 
 function Ready() {
+    const [cars, setCars] = useState([
+        {
+            id: 100,
+            image: 'https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/4186005/300/200/m2/fpnw/wm0/silhouette-car-.jpg?1521987235&s=5b3db7d2b8d1893d6d47029cb71740db',
+            vin: "4T1BB3EK3AU115504",
+            make: "Toyota",
+            model: "Camry Hybrid",
+            year: "2010",
+            transmission: "Automatic",
+            miles: "35,300",
+            price: "$14,998",
+            payTransf: false,
+        },
+        {
+            id: 101,
+            vin: "WAUYGAFC6CN174200",
+            make: "Audi",
+            model: "A7",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "65,300",
+            price: "$21,998",
+            payTransf: false,
+        },
+        {
+            id: 103,
+            vin: "KNDJE723297570351",
+            make: "Kia",
+            model: "Sportage",
+            year: "2009",
+            transmission: "Automatic",
+            miles: "25,300",
+            price: "$20,998",
+            payTransf: true,
+        },
+        {
+            id: 104,
+            vin: "YV1AH852071023377",
+            make: "Volvo",
+            model: "S80",
+            year: "2007",
+            transmission: "Automatic",
+            miles: "45,300",
+            price: "$18,998",
+            payTransf: false,
+        },
+        {
+            id: 105,
+            vin: "KM8SC73E15U984562",
+            make: "Hyundai",
+            model: "Santa Fe",
+            year: "2005",
+            transmission: "Automatic",
+            miles: "15,300",
+            price: "$17,998",
+            payTransf: false,
+        },
+        {
+            id: 106,
+            vin: "WVGBV7AX6CW559712",
+            make: "Volkswagen",
+            model: "Tiguan",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "5,300",
+            price: "$23,998",
+            payTransf: false,
+        },
+        {
+            id: 107,
+            vin: "1G1ZD5E09CF251160",
+            make: "Chevrolet",
+            model: "Malibu",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "35,000",
+            price: "$16,998",
+            payTransf: false,
+        },
+        {
+            id: 108,
+            vin: "WBA3A5C57CF256651",
+            make: "BMW",
+            model: "328",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "75,300",
+            price: "$15,998",
+            payTransf: false,
+        },
+        {
+            id: 109,
+            vin: "WDBRN40J54A591238",
+            make: "Mercedes-Benz",
+            model: "C230",
+            year: "2004",
+            transmission: "Automatic",
+            miles: "95,300",
+            price: "$13,998",
+            payTransf: false,
+        },
+        {
+            id: 110,
+            vin: "WMWRC33474TC49530",
+            make: "Mini",
+            model: "Cooper",
+            year: "2004",
+            transmission: "Automatic",
+            miles: "75,500",
+            price: "$7,998",
+            payTransf: false,
+        },
+        {
+            id: 111,
+            vin: "JTMWF4DV8C5047998",
+            make: "Toyota",
+            model: "Rav4",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "15,500",
+            price: "$16,998",
+            payTransf: false,
+        },
+        {
+            id: 112,
+            vin: "1FTRW12507FB38262",
+            make: "Ford",
+            model: "F-150",
+            year: "2007",
+            transmission: "Automatic",
+            miles: "75,300",
+            price: "$13,998",
+            payTransf: false,
+        },
+        {
+            id: 113,
+            vin: "2CTALDEW5A6370888",
+            make: "GMC",
+            model: "Terrain",
+            year: "2010",
+            transmission: "Automatic",
+            miles: "57,300",
+            price: "$17,998",
+            payTransf: false,
+        },
+        {
+            id: 114,
+            vin: "1C4RJEBG8CC299381",
+            make: "Jeep",
+            model: "Grand Cherokee",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "58,970",
+            price: "$26,998",
+            payTransf: false,
+        },
+        {
+            id: 115,
+            vin: "SAJWA0ES6DPS56028",
+            make: "Jaguar",
+            model: "XF",
+            year: "2013",
+            transmission: "Automatic",
+            miles: "32,300",
+            price: "$32,998",
+            payTransf: false,
+        },
+        {
+            id: 116,
+            vin: "3C6JD7AT3CG280241",
+            make: "Dodge",
+            model: "Ram 1500",
+            year: "2012",
+            transmission: "Automatic",
+            miles: "42,321",
+            price: "$19,998",
+            payTransf: true,
+            
+        },
+        {
+            id: 117,
+            vin: "2C4GF48475R602466",
+            make: "Chrysler",
+            model: "Pacifica",
+            year: "2005",
+            transmission: "Automatic",
+            miles: "75,300",
+            price: "$11,998",
+            payTransf: false,
+            
+        },
+
+    ])
 
 return(
-<Row>
-    <Col>
-    </Col>
-</Row>
+<div>
+    {cars.map(car => (
+        <Car make={car.make} year={car.year} model={car.model} transmission={car.transmission} miles={car.miles} price={car.price} vin={car.vin} />
+    ))}
+</div>
 )
 }
 

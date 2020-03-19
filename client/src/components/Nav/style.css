@@ -1,20 +1,5 @@
-/* div.nav-item{
-    border: black solid 2px;
-    width: 32%;
-    margin: 5px;
-    margin-left: 13px;
-    padding-top: 10px;
-}
-div.nav-item:hover{
+a.nav-link:hover{
     background-color: blue;
     color: white;
 }
-div.nav{
-    border-bottom: black solid 2px;
-}
 
-p{
-    text-align: center;
-    font-weight: bold;
-    font-size: larger;
-} */

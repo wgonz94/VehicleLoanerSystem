@@ -1,3 +1,12 @@
 div.logo{
-    margin: 25px;
+    margin-left: 55px;
+    /* margin-top: 5px; */
+}
+div.main-header{
+    background-color: whitesmoke;
+    width: 105%;
+    padding-top: 25px;
+    position: relative;
+    right: 15px;
+    border-radius: 12px;
 }
