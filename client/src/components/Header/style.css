@@ -11,3 +11,7 @@ div.main-header{
     /* border-radius: 12px; */
     border-bottom: solid lightgray ;
 }
+
+a{
+    color: black;
+}

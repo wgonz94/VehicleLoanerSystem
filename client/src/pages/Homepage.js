@@ -1,5 +1,6 @@
-import React, { useContext, useEffect } from 'react';
+import React, { useContext } from 'react';
 import Header from './../components/Header';
+import Nav from './../components/Nav'
 import Ready from './../pages/Loaners/Ready';
 import OffLot from './../pages/Loaners/Off-Lot';
 import Unavailable from './../pages/Loaners/Unavailable';
@@ -14,27 +15,26 @@ function Homepage() {
     const [page, setPage] = useContext(CarContext);
 
 
-useEffect(() => {
+const renderPage = (e) => {
+    
     if(page === 'Ready'){
-     return <Ready />
+     return <Ready cars={[cars]} setCars={setCars}/>
     } else if (page === 'OffLot') {
     return <OffLot />
     } else if (page === 'Unavailable') {
     return <Unavailable />
     } else {
      return <Signin />
- }
-}, [page])
+    }
+}
 
 
 
  return(
      <Container fluid>
          <Header/>
-            <div>
-                {/* <p className='loanerCount'>Available Loaners : {cars.length}</p> */}
-             </div>
-        {page}
+         <Nav page={page} setPage={setPage}/>
+        {renderPage()}
      </Container>
  )
 }
