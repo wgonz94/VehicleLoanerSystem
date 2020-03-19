@@ -8,6 +8,6 @@ div.main-header{
     padding-top: 25px;
     position: relative;
     right: 15px;
-    border-radius: 12px;
-    border-bottom: thick black;
+    /* border-radius: 12px; */
+    border-bottom: solid lightgray ;
 }

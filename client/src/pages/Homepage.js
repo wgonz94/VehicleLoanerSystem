@@ -33,7 +33,7 @@ function Homepage() {
  return(
      <Container fluid>
          <Header/>
-       
+       <div><p className='loanerCount'>Available Loaners : </p></div>
         <Ready />
      </Container>
  )

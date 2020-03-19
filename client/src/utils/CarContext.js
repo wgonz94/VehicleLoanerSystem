@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Col, Row } from '../../components/Grid';
-import './style.css'
-import Car from './Car';
+import React, {useState, createContext} from 'react'
 
-function Ready() {
+const CarContext = createContext();
+
+export const CarProvider = (props) => {
     const [cars, setCars] = useState([
         {
             id: 100,
@@ -23,7 +22,7 @@ function Ready() {
             make: "Audi",
             model: "A7",
             year: "2012",
-            transmission: "Automatic",
+            transmission: "Aut)omatic",
             miles: "65,300",
             price: "$21,998",
             payTransf: false,
@@ -196,15 +195,10 @@ function Ready() {
             
         },
 
-    ])
+    ]);
 
-return(
-<div className='carList'>
-    {cars.map(car => (
-        <Car key={car.id} make={car.make} year={car.year} model={car.model} transmission={car.transmission} miles={car.miles} price={car.price} vin={car.vin} />
-    ))}
-</div>
-)
+    return(
+    <CarContext.Provider>{props.children}</CarContext.Provider>
+    );
 }
 
-export default Ready;

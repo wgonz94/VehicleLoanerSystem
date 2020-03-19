@@ -1,14 +1,20 @@
 div.bgCars{
-    background-color: turquoise;
-    border: black solid 2px;
+    background-color: whitesmoke;
+    border: grey solid 1px;
     padding: 5px;
     margin: 5px;
     border-radius: 12px;
     height: 250px;
-    width: 55%;
+    width: 40%;
+    float: left;
     position: relative;
-    left: 25%;
-    top: 20px;
+    left: 250px;
+}
+
+div.carList{
+    overflow-y: scroll;
+    height: 550px;
+    
 }
 
 img{
@@ -17,20 +23,20 @@ img{
     border-radius: 10px;
     position: relative;
     left: 35px;
-    bottom: 5px;
+    bottom: px;
 }
 
 h3{
 text-align: end;
 position: relative;
-right: 55px;
+right: 35px;
 }
 
 section{
     text-align: end;
     position: relative;
     bottom: 125px;
-    right: 45px;
+    right: 35px;
 }
 
 p{
