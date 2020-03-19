@@ -1,5 +1,5 @@
-import React, {useContext} from 'react';
-import {CarContext} from './../../utils/CarContext';
+import React from 'react';
+
 import './style.css';
 
 function Nav({page, setPage}){

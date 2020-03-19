@@ -209,10 +209,10 @@ export const CarProvider = (props) => {
             payTransf: false,
         }
     ])
-    const [page, setPage] = useState('')
+    
 
     return(
-    <CarContext.Provider value={[cars, setCars], [page, setPage]}>{props.children}</CarContext.Provider>
+    <CarContext.Provider value={[cars, setCars, offlot, setOfflot]}>{props.children}</CarContext.Provider>
     );
 }
 
