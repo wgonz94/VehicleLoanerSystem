@@ -196,9 +196,23 @@ export const CarProvider = (props) => {
         },
 
     ]);
+    const [offlot, setOfflot] = useState([
+        {
+            id: 125,
+            vin: "5J6RE4H48BL023237",
+            make: "Honda",
+            model: "CR-V",
+            year: "2011",
+            transmission: "Automatic",
+            miles: "62,330",
+            price: "$16,498",
+            payTransf: false,
+        }
+    ])
+    const [page, setPage] = useState('')
 
     return(
-    <CarContext.Provider value={[cars, setCars]}>{props.children}</CarContext.Provider>
+    <CarContext.Provider value={[cars, setCars], [page, setPage]}>{props.children}</CarContext.Provider>
     );
 }
 

@@ -1,15 +1,15 @@
-import React from 'react';
+import React, {useContext} from 'react';
 import Nav from './../Nav'
 import './style.css'
+import { CarContext } from './../../utils/CarContext'
 
 function Header() {
-
+const [page] = useContext(CarContext)
     return (
         <div className='main-header'>
             <div className='logo'>
                 <h2>VLS</h2>
-                {/* Insert Logo here */}
-            <Nav />
+            <Nav page={page}/>
             </div>
         </div>
     )

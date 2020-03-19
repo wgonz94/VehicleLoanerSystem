@@ -1,5 +1,4 @@
-import React, { useState, useContext } from 'react';
-import { Col, Row } from '../../components/Grid';
+import React, { useContext } from 'react';
 import './style.css'
 import Car from './Car';
 import {CarContext} from './../../utils/CarContext'
@@ -11,6 +10,7 @@ return(
 <div className='carList'>
     {cars.map(car => (
         <Car key={car.id} make={car.make} year={car.year} model={car.model} transmission={car.transmission} miles={car.miles} price={car.price} vin={car.vin} />
+
     ))}
 </div>
 )

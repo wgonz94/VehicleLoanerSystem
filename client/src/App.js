@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import Homepage from './pages/Homepage';
 import { CarProvider } from './utils/CarContext';
-// import Signin from './pages/Sign-In/signin';
+
 
 
 
 
 function App() {
+  
   return (
     <CarProvider>
     <div className="App">
-      <Homepage />
+      <Homepage/>
     </div>
     </CarProvider>
   );
