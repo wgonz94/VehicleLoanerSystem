@@ -29,6 +29,16 @@ img.offlot-img{
     bottom: 20px;
     height: 130px;
 }
+button.readyOfflot{
+ position: absolute;
+ left: 50px;
+ top: 155px;
+ border-radius: 10px;
+ background-color: lightgreen;
+}
+button.readyOfflot:hover{
+    background-color: lightsalmon;
+}
 
 p.offlot{
     
@@ -36,7 +46,7 @@ p.offlot{
 }
 img{
     width: 200px;
-    height: 150px;
+    height: 125px;
     border-radius: 10px;
     position: relative;
     left: 35px;

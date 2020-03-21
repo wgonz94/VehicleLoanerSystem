@@ -15,6 +15,7 @@ export const CarProvider = (props) => {
             miles: "35,300",
             price: "$14,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 101,
@@ -22,10 +23,11 @@ export const CarProvider = (props) => {
             make: "Audi",
             model: "A7",
             year: "2012",
-            transmission: "Aut)omatic",
+            transmission: "Automatic",
             miles: "65,300",
             price: "$21,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 103,
@@ -37,6 +39,7 @@ export const CarProvider = (props) => {
             miles: "25,300",
             price: "$20,998",
             payTransf: true,
+            available: true,
         },
         {
             id: 104,
@@ -48,6 +51,7 @@ export const CarProvider = (props) => {
             miles: "45,300",
             price: "$18,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 105,
@@ -59,6 +63,7 @@ export const CarProvider = (props) => {
             miles: "15,300",
             price: "$17,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 106,
@@ -70,6 +75,7 @@ export const CarProvider = (props) => {
             miles: "5,300",
             price: "$23,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 107,
@@ -81,6 +87,7 @@ export const CarProvider = (props) => {
             miles: "35,000",
             price: "$16,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 108,
@@ -92,6 +99,7 @@ export const CarProvider = (props) => {
             miles: "75,300",
             price: "$15,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 109,
@@ -103,6 +111,7 @@ export const CarProvider = (props) => {
             miles: "95,300",
             price: "$13,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 110,
@@ -114,6 +123,7 @@ export const CarProvider = (props) => {
             miles: "75,500",
             price: "$7,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 111,
@@ -125,6 +135,7 @@ export const CarProvider = (props) => {
             miles: "15,500",
             price: "$16,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 112,
@@ -136,6 +147,7 @@ export const CarProvider = (props) => {
             miles: "75,300",
             price: "$13,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 113,
@@ -147,6 +159,7 @@ export const CarProvider = (props) => {
             miles: "57,300",
             price: "$17,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 114,
@@ -158,6 +171,7 @@ export const CarProvider = (props) => {
             miles: "58,970",
             price: "$26,998",
             payTransf: false,
+            available: true,
         },
         {
             id: 115,
@@ -169,6 +183,8 @@ export const CarProvider = (props) => {
             miles: "32,300",
             price: "$32,998",
             payTransf: false,
+            available: true,
+            available: true,
         },
         {
             id: 116,
@@ -180,6 +196,7 @@ export const CarProvider = (props) => {
             miles: "42,321",
             price: "$19,998",
             payTransf: true,
+            available: true,
             
         },
         {
@@ -192,11 +209,25 @@ export const CarProvider = (props) => {
             miles: "75,300",
             price: "$11,998",
             payTransf: false,
+            available: true,
+            
+        },
+        {
+            id: 118,
+            vin: "5TDXK3DC0BS167750",
+            make: "Toyota",
+            model: "Sienna",
+            year: "2011",
+            transmission: "Automatic",
+            miles: "55,365",
+            price: "$15,998",
+            payTransf: true,
+            available: true,
             
         },
 
     ]);
-    
+
 
     return(
     <CarContext.Provider value={[cars, setCars]}>{props.children}</CarContext.Provider>

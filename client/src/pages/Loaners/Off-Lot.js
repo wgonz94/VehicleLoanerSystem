@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './style.css'
 import { Row, Col } from '../../components/Grid';
+import { OfflotContext } from '../../utils/Context/OffLotContext';
 
 
 function OffLot() {
 //use offlot context
+const [offlot, setOfflot] = useContext(OfflotContext)
 return(
 
 <div className='offlot'>
+    {offlot}
     <Row>
         <Col size='md-4'>
     <img className='offlot-img' alt='loanervehicle' src='https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/4186005/300/200/m2/fpnw/wm0/silhouette-car-.jpg?1521987235&s=5b3db7d2b8d1893d6d47029cb71740db'/>

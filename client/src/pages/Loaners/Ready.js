@@ -10,7 +10,7 @@ return(
 
 <div className='carList'>
     {cars.map(car => (
-        <Car key={car.id} make={car.make} year={car.year} model={car.model} transmission={car.transmission} miles={car.miles} price={car.price} vin={car.vin} />
+     <Car key={car.id} make={car.make} year={car.year} model={car.model} transmission={car.transmission} miles={car.miles} price={car.price} vin={car.vin} available={car.available}/>
     ))}
 </div>
 )
