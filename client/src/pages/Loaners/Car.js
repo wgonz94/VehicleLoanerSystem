@@ -20,7 +20,7 @@ const Car = ({ make, model, year, transmission, miles, price, vin , available, i
         <p>Price: {price}</p>
         <p>Check for Recalls - <small>{vin}</small></p>
         </aside>
-        <button className='readyOfflot' onClick={setOfflot}>Use as Loaner</button>
+        <button className='readyOfflot' onClick={sendOfflot}>Use as Loaner</button>
     </section> 
     </div>
     </Fragment>
