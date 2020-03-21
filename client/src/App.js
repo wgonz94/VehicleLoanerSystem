@@ -6,18 +6,20 @@ import { OfflotProvider } from './utils/Context/OffLotContext';
 
 
 
+
 function App() {
-  
+
   return (
-    <PageProvider>
-    <CarProvider>
-      <OfflotProvider>
-    <div className="App">
-      <Homepage/>
-    </div>
-    </OfflotProvider>
-    </CarProvider>
-    </PageProvider>
+
+      <PageProvider>
+        <CarProvider>
+          <OfflotProvider>
+            <div className="App">
+              <Homepage />
+            </div>
+          </OfflotProvider>
+        </CarProvider>
+      </PageProvider>
   );
 }
 
