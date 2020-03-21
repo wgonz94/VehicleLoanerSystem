@@ -1,4 +1,5 @@
 import React, { useState, createContext } from 'react';
+// import Unavailable from '../pages/Loaners/Unavailable';
 
 export const OfflotContext = createContext();
 
@@ -10,10 +11,8 @@ export const OfflotProvider = (props) => {
             make: "Honda",
             model: "CR-V",
             year: "2011",
-            transmission: "Automatic",
-            miles: "62,330",
-            price: "$16,498",
-            payTransf: false,
+            customer: 'Steve Rogers',
+            notes: [],
         }
     ])
 

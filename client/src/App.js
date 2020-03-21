@@ -1,8 +1,8 @@
 import React from 'react';
 import Homepage from './pages/Homepage';
-import { CarProvider } from './utils/CarContext';
-import { PageProvider } from './utils/PageContext';
-import { OfflotProvider } from './utils/OffLotContext';
+import { CarProvider } from './utils/Context/CarContext';
+import { PageProvider } from './utils/Context/PageContext';
+import { OfflotProvider } from './utils/Context/OffLotContext';
 
 
 

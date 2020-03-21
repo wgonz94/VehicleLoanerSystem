@@ -17,6 +17,23 @@ div.carList{
     
 }
 
+div.offlot{
+    border: solid lightgray 2px;
+    height: 150px;
+    padding-top: 20px;
+    position: relative;
+    top: 20px;
+}
+img.offlot-img{
+    position: relative;
+    bottom: 20px;
+    height: 130px;
+}
+
+p.offlot{
+    
+    text-align: left;
+}
 img{
     width: 200px;
     height: 150px;
