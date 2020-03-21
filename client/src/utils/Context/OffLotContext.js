@@ -4,7 +4,7 @@ import React, { useState, createContext } from 'react';
 export const OfflotContext = createContext();
 
 export const OfflotProvider = (props) => {
-    const [offlot, setOfflot] = useState([
+    const [offlots, setOfflot] = useState([
         {
             id: 125,
             vin: "5J6RE4H48BL023237",
@@ -12,11 +12,11 @@ export const OfflotProvider = (props) => {
             model: "CR-V",
             year: "2011",
             customer: 'Steve Rogers',
-            notes: [],
+            notes: ['Possible Leak, further inspection needed'],
         }
     ])
 
     return(
-        <OfflotContext.Provider value={[offlot, setOfflot]}>{props.children}</OfflotContext.Provider>
+        <OfflotContext.Provider value={[offlots, setOfflot]}>{props.children}</OfflotContext.Provider>
     )
 }
